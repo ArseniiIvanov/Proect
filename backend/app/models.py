@@ -140,3 +140,4 @@ class Subscription(Base):
     faculty_filter: Mapped[Optional[str]] = mapped_column(String(100))
 
     student: Mapped["Student"] = relationship("Student", back_populates="subscriptions")
+    
